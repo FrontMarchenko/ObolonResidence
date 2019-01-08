@@ -1,0 +1,68 @@
+body
+	+HM
+.container
+	max-width: 1000px
+	width: 100%
+	margin: 0 auto
+	padding: 0 10px
+.header
+	&__top
+		padding-top: 31px
+		border-bottom: 1px solid #a59864
+	&__bottom
+		padding-top: 22px
+	&__inner
+		display: flex
+	&__nav
+		&:not(:last-child)
+			margin-right: 49px
+		ul
+			display: flex
+		li
+			&:not(:last-child)
+				margin-right: 49px
+			&:nth-child(3)
+				margin-right: 305px
+		a
+			text-decoration: none
+			color: #a59864
+			font-size: 12px
+			text-transform: uppercase
+		
+			&:hover,&.is-active
+				color: #191821
+			
+	&__logo
+		position: absolute
+		left: 50%
+		margin-left: -79px
+.contacts
+	display: flex
+	flex-direction: column
+	margin-left: auto
+	&__tel
+		padding-top: 3px
+		margin-bottom: 9px
+		a
+			text-decoration: none
+			color: #383430
+			font-size: 18px
+			letter-spacing: 1.08px
+			text-transform: uppercase
+	&__booking
+		a
+			font-size: 14px
+			text-decoration: underline
+			letter-spacing: 1.12px
+			color: #ffffff
+			padding: 13px 15px
+			background-color: #901313
+			display: inline-flex
+			+HL
+.switch-language
+	margin-left: 12px
+	margin-right: -25px
+	color: #a6a6a6
+	letter-spacing: 0.7px
+	font-size: 14px
+	+HL

@@ -1,0 +1,71 @@
+{% set nav = [{
+            title: 'Преимущества',
+            class: 'is-active',
+            id: '#Advantages'
+        },{
+            title: 'Расположение',
+            id: '#map'
+        },{
+            title: 'ГАЛЕРЕЯ',
+            id: '#gallery'
+        },{
+            title: 'Апартаменты',
+            id: '#Apartaments'
+        },{
+            title: 'Девелопер',
+            id: '#dev'
+        },{
+            title: 'Контакты',
+            id: '#contacts'
+        }
+    
+    ]
+
+    
+
+%}
+
+
+<header class="header">
+    <div class="container">
+            <div class="header__logo">
+                    <div class="logo">
+                        <img src="../../img/Logo.png" alt="Obolon Residences" class="img-fluid"/>
+                    </div>
+                </div>
+    </div>
+ 
+  <div class="header__top">
+    <div class="container">
+      <div class="header__inner">
+        <div class="contacts">
+          <div class="contacts__tel">
+            <a href="tel:+38(044)498-26-26">+38 (044) 498-26-26</a>
+          </div>
+          <div class="contacts__booking">
+            <a href="#">Записаться на просмотр</a>
+          </div>
+        </div>
+        <div class="switch-language">
+          <div class="switch-language__ru">рус</div>
+          <div class="switch-language__ua">укр</div>
+          <div class="switch-language__en">eng</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="header__nav">
+        <ul>
+            {% for i in nav %}
+          <li><a href="{{i.id}}" class="{{i.class}}">{{i.title}}</a></li>
+
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</header>
