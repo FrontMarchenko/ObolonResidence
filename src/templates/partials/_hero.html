@@ -1,16 +1,39 @@
-{%set adv =[{
-    
-    }
-    
-    ] %}
+{%set descr =[
+{
+text: 'Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером
+Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции
+метро «Минская».
+Западный дизайн, роскошные интерьеры лобби и этажей, отделка мрамором, '
+},
+{
+text: ' скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и
+эффективными планировками и элитные пентхаусы удивят
+даже самых искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура лучших резиденций мировых
+мегаполисов – для жителей Obolon Residences:'
+},
+{
+text: '<span>лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис.</span>
+
+ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории
+«Высотные жилые здания».'
+}
+
+] %}
 
 <div class="hero">
-    <div class="hero__top"></div>
-    <div class="hero__bottom">
-        <div class="container">
-            <div class="hero__additional">
-
-            </div>
+  <div class="hero__top" style="background-image: url('../../img/Hero-bg.jpg')"></div>
+  <div class="hero__bottom">
+    <div class="container">
+        <div class="hero__logo">
+        <img src="../../img/awards.jpg" alt="European Property Awards">
         </div>
+
+      <div class="hero__description">
+        {% for i in descr %}
+        <p>{{i.text | safe}}</p>
+        {% endfor %}
+      </div>
+
     </div>
+  </div>
 </div>

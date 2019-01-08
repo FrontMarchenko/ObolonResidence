@@ -1,0 +1,352 @@
+<!--map-->
+<section class="map">
+        <div class="map__inner" id="js-map"></div>
+
+</section>
+
+
+<script>
+        var map;
+  
+        function initMap()
+        {
+          map = new google.maps.Map(document.getElementById('js-map'),
+          {
+            zoom: 16,
+            styles: [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e9e9e9"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f5f5f5"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#dedede"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "saturation": 36
+            },
+            {
+                "color": "#333333"
+            },
+            {
+                "lightness": 40
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    }
+],
+            center: new google.maps.LatLng(50.512842, 30.499916),
+            mapTypeId: 'roadmap'
+          });
+          var iconBase = 'img/map-markers/';
+          var icons = {
+            obolon:
+            {
+              icon: iconBase + 'Obolon.png'
+            },
+            apteka:
+            {
+              icon: iconBase + 'apteka.png'
+            },
+            scissors:
+            {
+              icon: iconBase + 'salon-krasoti.png'
+            },
+            dentist:
+            {
+              icon: iconBase + 'stomat.png'
+            },
+            car:
+            {
+              icon: iconBase + 'transport.png'
+            },
+            cart:
+            {
+              icon: iconBase + 'magazine.png'
+            },
+            carGrey:
+            {
+              icon: iconBase + 'avtokino.png'
+            },
+            clinic:
+            {
+              icon: iconBase + 'Poliklinnika.png'
+            },
+            metro:
+            {
+              icon: iconBase + 'Metro.png'
+            },
+            book:
+            {
+              icon: iconBase + 'shkola.png'
+            },
+            cup:
+            {
+              icon: iconBase + 'kofe.png'
+            },
+            dollar:
+            {
+              icon: iconBase + 'apteka.png'
+            },
+            gas:
+            {
+              icon: iconBase + 'AZS.png'
+            },
+            tree:
+            {
+              icon: iconBase + 'Park.png'
+            },
+            shop:
+            {
+              icon: iconBase + 'shoping.png'
+            },
+            gym:
+            {
+              icon: iconBase + 'gym.png'
+            },
+            parus:
+            {
+              icon: iconBase + 'yahta.png'
+            },
+          };
+          var features = [
+          {
+            position: new google.maps.LatLng(50.512784, 30.502000),
+            type: 'scissors'
+          },
+          {
+            position: new google.maps.LatLng(50.512842, 30.499916),
+            type: 'obolon'
+          },
+          {
+            position: new google.maps.LatLng(50.512406, 30.505079),
+            type: 'dentist'
+          },
+          {
+            position: new google.maps.LatLng(50.514011, 30.503585),
+            type: 'car'
+          },
+          {
+            position: new google.maps.LatLng(50.512771, 30.501994),
+            type: 'cart'
+          },
+          {
+            position: new google.maps.LatLng(50.512784, 30.502000),
+            type: 'carGrey'
+          },
+          {
+            position: new google.maps.LatLng(50.512648, 30.501196),
+            type: 'apteka'
+          },
+          {
+            position: new google.maps.LatLng(50.503050, 30.448892),
+            type: 'clinic'
+          },
+          {
+            position: new google.maps.LatLng(50.499190, 30.451805),
+            type: 'metro'
+          },
+          {
+            position: new google.maps.LatLng(50.514301, 30.501662),
+            type: 'book'
+          },
+          {
+            position: new google.maps.LatLng(50.512733, 30.502519),
+            type: 'cup'
+          },
+          {
+            position: new google.maps.LatLng(50.503337, 30.496609),
+            type: 'dollar'
+          },
+          {
+            position: new google.maps.LatLng(50.499544, 30.495232),
+            type: 'gas'
+          },
+          {
+            position: new google.maps.LatLng(50.501903, 30.489880),
+            type: 'tree'
+          },
+          {
+            position: new google.maps.LatLng(50.5212784, 30.502000),
+            type: 'shop'
+          },
+          {
+            position: new google.maps.LatLng(50.514366, 30.500124),
+            type: 'gym'
+          },
+          {
+            position: new google.maps.LatLng(50.513834, 30.502919),
+            type: 'parus'
+          }];
+          // Create markers.
+          features.forEach(function(feature)
+          {
+            var marker = new google.maps.Marker(
+            {
+              position: feature.position,
+              icon: icons[feature.type].icon,
+              map: map
+            });
+          });
+        }
+  
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZMtRIe3Lor3hom1nW5H0ZdD-fel0LjYs&callback=initMap">
+  
+  
+      </script>
+      <!--end map-->

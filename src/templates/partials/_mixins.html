@@ -2,3 +2,13 @@
 <svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
 {% endmacro %}
 
+{% macro advitems(title, img) %}
+<div class="advantages__item">
+        <div class="advantages-item" style="background-image: url('img/blabla/{{img}}')">
+            <a href="#" class="btn">Подробнее</a>
+        </div>
+        <p>{{title}}</p>
+        
+</div>
+
+{% endmacro %}
