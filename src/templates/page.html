@@ -5,28 +5,15 @@ title: Index page
 
 {% block content %}
 	
-	<!-- {# variable example #}
-	<h1>{{title}}</h1>
-
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #} -->
 	{% include "partials/_header.html" %}
 	{% include "partials/_hero.html" %}
 	{% include "partials/_advantages.html" %}
 	{% include "partials/_map.html" %}
 	{% include "partials/_rooms.html" %}
 	{% include "partials/_features.html" %}
+	{% include "partials/_investors.html" %}
+	{% include "partials/_footer.html" %}
+	{% include "partials/_popups.html" %}
+
+
 {% endblock %}

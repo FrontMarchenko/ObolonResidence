@@ -1,10 +1,14 @@
 body
 	+HM
+.is-hidden
+	overflow: hidden
 .container
 	max-width: 1000px
 	width: 100%
 	margin: 0 auto
 	padding: 0 10px
+	+md
+		max-width: 930px
 .header
 	&__top
 		padding-top: 31px
@@ -19,11 +23,15 @@ body
 			margin-right: 49px
 		ul
 			display: flex
+			+md
+				justify-content: center
 		li
 			&:not(:last-child)
 				margin-right: 49px
 			&:nth-child(3)
 				margin-right: 305px
+				+md
+					margin-right: 49px
 		a
 			text-decoration: none
 			color: #a59864
@@ -38,10 +46,21 @@ body
 		left: 50%
 		margin-left: -79px
 		z-index: 1
+		+md
+			left: unset
+			margin-left: 0
+			img
+				+md
+					max-width: 53%
 .contacts
 	display: flex
 	flex-direction: column
 	margin-left: auto
+	+r(1080)
+		margin-right: auto
+		margin-left: 0px
+	+md
+		margin-left: auto
 	&__tel
 		padding-top: 3px
 		margin-bottom: 9px
@@ -68,12 +87,18 @@ body
 	letter-spacing: 0.7px
 	font-size: 14px
 	+HL
+	+md
+		margin: 0
 //hero
 .hero
 	&__top
 		background-size: cover
+		background-repeat: no-repeat
 		height: 730px
 		position: relative
+		+md
+			background-size: auto
+
 	&__bottom
 		background-color: #a59864
 	&__description
@@ -96,6 +121,8 @@ body
 		left: 188px
 		img
 			height: 204px
+			+md
+				display: none
 //adv
 .advantages
 	+HL
@@ -144,6 +171,7 @@ body
 	&__item
 		text-align: center
 		margin-right: 40px
+		margin-bottom: 25px
 //map
 .map
 	&__inner
@@ -217,3 +245,241 @@ body
 		color: #191821
 	&_gold
 		color: #a59864
+//features
+.features
+	height: 350px
+	display: flex
+	&__gallery,&__web
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		height: 100%
+		background-size: cover
+		width: 50%
+		color: #fff
+		h3
+			+HT
+			font-size: 24px
+			text-transform: uppercase
+				
+		p
+			14px
+		&:hover
+			background-color: #0a0a16
+			opacity: 0.4
+			cursor: pointer
+//investors
+.investors
+	background-size: cover
+	height: 650px
+	&__description
+		display: flex
+		p
+			width: percentage(960 / 3)
+			span
+				display: inline-flex
+				padding-top: 22px
+		p:not(:last-child)
+			margin-right: 38px
+		p:first-child
+			margin-bottom: 20px
+	&__inner
+		padding-top: 119px
+
+
+//footer
+.footer
+	background-color: #191821
+	&__inner
+		padding-top: 72px
+		padding-bottom: 102px
+		display: flex
+	&__left
+		width: 30%
+		margin-right: 68px
+	&__right
+		+md
+			width: 100%
+.sales
+	color: #fff
+	h3
+		+HT
+		font-size: 24px
+		text-transform: uppercase
+		letter-spacing: 1.2px
+	&__item
+		display: flex
+		flex-direction: column
+		span
+			display: flex
+	a
+		&:not(.link_gold)
+			color: inherit	
+	&__inner
+		display: flex
+		flex-direction: column
+		height: 115px
+		flex-wrap: wrap
+//quest-form
+.form
+	+HM
+	padding: 81px 138px
+	background-color: #a59864
+	letter-spacing: 0.7px
+	max-width: 346px
+	width: 100%
+	box-sizing: content-box
+	text-align: center
+	+md
+		padding: 61px 108px
+	&__field
+		margin-bottom: 15px
+	p
+		font-size: 24px
+		text-align: left
+		+HT
+		text-transform: uppercase
+		margin-bottom: 20px
+		color: #fff
+		letter-spacing: 1.2px
+	textarea[name="comment"]
+		resize: none
+		color: #808184
+		font-size: 14px
+		width: 100%
+		border: none
+		box-sizing: border-box
+		min-height: 65px
+	input[type="text"]
+		min-height: 31px
+		width: 100%
+		font-size: 14px
+		color: #808184
+	button[type="submit"]
+		font-size: 14px
+		text-align: center
+		color: #fff
+		background-color: #af1a1a
+		min-height: 50px
+		min-width: 227px
+//popup
+.popup
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	background-color: rgba(0,0,0,.9)
+	overflow: auto
+	position: fixed
+	width: 100%
+	z-index: 9999
+	display: none
+	&__content
+		display: flex
+	&.is-active
+		display: block
+	&__inner
+		position: relative
+		height: 100%
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		//background-color: #fff
+		// width: 100%
+		// height: 100%
+		// background-color: #000000
+		// opacity: .8
+	&__item
+		display: none
+		&.is-active
+			position: relative
+			display: flex
+			max-width: 600px
+			width: 100%
+			background-color: #fff
+	&__close
+		cursor: pointer
+		position: absolute
+		right: 1px
+			
+.booking-form
+	position: relative
+//burger
+.header
+	&__burger
+		display: none
+		margin-right: -10px
+		z-index: 20
+		+sm
+			display: block
+			position: absolute
+			top: -6px
+			right: 10px
+	&.is-open
+		.header__nav
+			position: fixed
+			display: flex
+			justify-content: center
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background: rgba(255,255,255,.95)
+		.header__logo
+			display: none
+		.header__bottom
+			height: 100vh
+		.nav
+			flex-direction: column
+			justify-content: space-around
+			&__item
+				font-size: 22px
+				margin: 0 auto
+			&__link
+				font-size: 20px
+.burger
+    $this: &
+    width: 50px
+    height: 50px
+    background: none
+    appearance: none
+    border: none
+    display: block
+    transition: transform .25s ease-in-out
+    &__in
+        display: block
+        margin: 0 auto
+        width: 30px
+        height: 22px
+        position: relative
+        & > span
+            display: block
+            width: 100%
+            height: 2px
+            background: grey
+            position: absolute
+            top: 10px
+            left: 0
+            &:nth-child(1),
+            &:nth-child(3)
+                transition: top .15s ease-in .15s, transform .25s ease-in-out
+            &:nth-child(1)
+                top: 0
+            &:nth-child(3)
+                top: 20px
+            &:nth-child(2)
+                transition: opacity 0s linear .15s
+    &.is-active
+        #{$this}__in > span
+            &:nth-child(1),
+            &:nth-child(3)
+                top: 10px
+                transition: top .15s ease-in, transform .25s ease-in-out .15s
+            &:nth-child(2)
+                opacity: 0
+            &:nth-child(1)
+                transform: rotate(45deg)
+            &:nth-child(3)
+                transform: rotate(-45deg)

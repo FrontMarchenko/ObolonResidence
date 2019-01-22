@@ -12,90 +12,7 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <!-- 
-	<h1>Index page</h1>
-
-	
-	
-	
-
-
-<header class="header">
-    <div class="container">
-            <div class="header__logo">
-                    <div class="logo">
-                        <img src="../../img/Logo.png" alt="Obolon Residences" class="img-fluid"/>
-                    </div>
-                </div>
-    </div>
- 
-  <div class="header__top">
-    <div class="container">
-      <div class="header__inner">
-        <div class="contacts">
-          <div class="contacts__tel">
-            <a href="tel:+38(044)498-26-26">+38 (044) 498-26-26</a>
-          </div>
-          <div class="contacts__booking">
-            <a href="#">Записаться на просмотр</a>
-          </div>
-        </div>
-        <div class="switch-language">
-          <div class="switch-language__ru">рус</div>
-          <div class="switch-language__ua">укр</div>
-          <div class="switch-language__en">eng</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <div class="header__bottom">
-    <div class="container">
-      <nav class="header__nav">
-        <ul>
-            
-          <li><a href="#Advantages" class="is-active">Преимущества</a></li>
-
-          
-          <li><a href="#map" class="">Расположение</a></li>
-
-          
-          <li><a href="#gallery" class="">ГАЛЕРЕЯ</a></li>
-
-          
-          <li><a href="#Apartaments" class="">Апартаменты</a></li>
-
-          
-          <li><a href="#dev" class="">Девелопер</a></li>
-
-          
-          <li><a href="#contacts" class="">Контакты</a></li>
-
-          
-        </ul>
-      </nav>
-    </div>
-
-  </div>
-</header>
-
-
-	
-	
-<svg class="icon icon-facebook"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
-
-
-
-	
-		
-		
-		
-		<li>Item1</li>
-		
-		<li>Item2</li>
-		
-	 -->
-      <header class="header">
+      <header class="header js-header">
         <div class="container">
           <div class="header__logo">
             <div class="logo">
@@ -103,6 +20,17 @@
             </div>
           </div>
         </div>
+        <!-- begin header__burger -->
+        <div class="header__burger">
+          <button class="burger js-burger">
+            <span class="burger__in">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+        <!-- end header__burger -->
         <div class="header__top">
           <div class="container">
             <div class="header__inner">
@@ -110,7 +38,7 @@
                 <div class="contacts__tel">
                   <a href="tel:+38(044)498-26-26">+38 (044) 498-26-26</a>
                 </div>
-                <div class="contacts__booking">
+                <div class="contacts__booking js-contacts-booking js-popup-open" data-popup-target="booking">
                   <a href="#">Записаться на просмотр</a>
                 </div>
               </div>
@@ -124,21 +52,21 @@
         </div>
         <div class="header__bottom">
           <div class="container">
-            <nav class="header__nav">
-              <ul>
-                <li><a href="#Advantages" class="is-active">Преимущества</a></li>
-                <li><a href="#map" class="">Расположение</a></li>
-                <li><a href="#gallery" class="">ГАЛЕРЕЯ</a></li>
-                <li><a href="#Apartaments" class="">Апартаменты</a></li>
-                <li><a href="#dev" class="">Девелопер</a></li>
-                <li><a href="#contacts" class="">Контакты</a></li>
+            <div class="header__nav">
+              <ul class="nav js-nav">
+                <li class="nav__item"><a href="#Advantages" class="nav__link is-active">Преимущества</a></li>
+                <li class="nav__item"><a href="#map" class="nav__link ">Расположение</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link ">ГАЛЕРЕЯ</a></li>
+                <li class="nav__item"><a href="#Apartaments" class="nav__link ">Апартаменты</a></li>
+                <li class="nav__item"><a href="#dev" class="nav__link ">Девелопер</a></li>
+                <li class="nav__item"><a href="#contacts" class="nav__link ">Контакты</a></li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
       </header>
       <div class="hero">
-        <div class="hero__top" style="background-image: url('../../img/Hero-bg.jpg')"></div>
+        <div class="hero__top" style="background-image: url('../../img/Hero-bg.png')"></div>
         <div class="hero__bottom">
           <div class="container">
             <div class="hero__logo">
@@ -174,43 +102,43 @@
           <div class="advantages__bottom">
             <div class="container">
               <div class="advantages__items">
-                <div class="advantages__item">
+                <div class="advantages__item js-popup-open" data-popup-target="servise">
                   <div class="advantages-item" style="background-image: url('img/blabla/servise.png')">
                     <a href="#" class="btn">Подробнее</a>
                   </div>
                   <p>Консьерж-сервис</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item js-popup-open" data-popup-target="sport">
                   <div class="advantages-item" style="background-image: url('img/blabla/sport.png')">
                     <a href="#" class="btn">Подробнее</a>
                   </div>
                   <p>Спортзал</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item js-popup-open" data-popup-target="conf-room">
                   <div class="advantages-item" style="background-image: url('img/blabla/conf-room.png')">
                     <a href="#" class="btn">Подробнее</a>
                   </div>
                   <p>Конференц-комната</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item js-popup-open" data-popup-target="lounge">
                   <div class="advantages-item" style="background-image: url('img/blabla/lounge.png')">
                     <a href="#" class="btn">Подробнее</a>
                   </div>
                   <p>Лаунж зона на крыше</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item js-popup-open" data-popup-target="child-room">
                   <div class="advantages-item" style="background-image: url('img/blabla/child-room.png')">
                     <a href="#" class="btn">Подробнее</a>
                   </div>
                   <p>Детская комната</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item js-popup-open" data-popup-target="wash">
                   <div class="advantages-item" style="background-image: url('img/blabla/washroom.png')">
                     <a href="#" class="btn">Подробнее</a>
                   </div>
                   <p>Прачечная</p>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item js-popup-open" data-popup-target="design">
                   <div class="advantages-item" style="background-image: url('img/blabla/design.png')">
                     <a href="#" class="btn">Подробнее</a>
                   </div>
@@ -225,175 +153,189 @@
       <section class="map">
         <div class="map__inner" id="js-map"></div>
       </section>
-      <script>
-        var map;
-
+      <script> var map;
+  
         function initMap()
         {
           map = new google.maps.Map(document.getElementById('js-map'),
           {
             zoom: 16,
             styles: [
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
             {
-              "featureType": "water",
-              "elementType": "geometry",
-              "stylers": [
-              {
                 "color": "#e9e9e9"
-              },
-              {
-                "lightness": 17
-              }]
             },
             {
-              "featureType": "landscape",
-              "elementType": "geometry",
-              "stylers": [
-              {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
                 "color": "#f5f5f5"
-              },
-              {
+            },
+            {
                 "lightness": 20
-              }]
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
             },
             {
-              "featureType": "road.highway",
-              "elementType": "geometry.fill",
-              "stylers": [
-              {
-                "color": "#ffffff"
-              },
-              {
                 "lightness": 17
-              }]
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#ffffff"
             },
             {
-              "featureType": "road.highway",
-              "elementType": "geometry.stroke",
-              "stylers": [
-              {
-                "color": "#ffffff"
-              },
-              {
                 "lightness": 29
-              },
-              {
+            },
+            {
                 "weight": 0.2
-              }]
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ffffff"
             },
             {
-              "featureType": "road.arterial",
-              "elementType": "geometry",
-              "stylers": [
-              {
-                "color": "#ffffff"
-              },
-              {
                 "lightness": 18
-              }]
-            },
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
             {
-              "featureType": "road.local",
-              "elementType": "geometry",
-              "stylers": [
-              {
                 "color": "#ffffff"
-              },
-              {
-                "lightness": 16
-              }]
             },
             {
-              "featureType": "poi",
-              "elementType": "geometry",
-              "stylers": [
-              {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
                 "color": "#f5f5f5"
-              },
-              {
-                "lightness": 21
-              }]
             },
             {
-              "featureType": "poi.park",
-              "elementType": "geometry",
-              "stylers": [
-              {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
                 "color": "#dedede"
-              },
-              {
+            },
+            {
                 "lightness": 21
-              }]
-            },
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.stroke",
+        "stylers": [
             {
-              "elementType": "labels.text.stroke",
-              "stylers": [
-              {
                 "visibility": "on"
-              },
-              {
+            },
+            {
                 "color": "#ffffff"
-              },
-              {
+            },
+            {
                 "lightness": 16
-              }]
-            },
+            }
+        ]
+    },
+    {
+        "elementType": "labels.text.fill",
+        "stylers": [
             {
-              "elementType": "labels.text.fill",
-              "stylers": [
-              {
                 "saturation": 36
-              },
-              {
+            },
+            {
                 "color": "#333333"
-              },
-              {
+            },
+            {
                 "lightness": 40
-              }]
-            },
+            }
+        ]
+    },
+    {
+        "elementType": "labels.icon",
+        "stylers": [
             {
-              "elementType": "labels.icon",
-              "stylers": [
-              {
                 "visibility": "off"
-              }]
-            },
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
             {
-              "featureType": "transit",
-              "elementType": "geometry",
-              "stylers": [
-              {
                 "color": "#f2f2f2"
-              },
-              {
+            },
+            {
                 "lightness": 19
-              }]
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#fefefe"
             },
             {
-              "featureType": "administrative",
-              "elementType": "geometry.fill",
-              "stylers": [
-              {
-                "color": "#fefefe"
-              },
-              {
                 "lightness": 20
-              }]
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#fefefe"
             },
             {
-              "featureType": "administrative",
-              "elementType": "geometry.stroke",
-              "stylers": [
-              {
-                "color": "#fefefe"
-              },
-              {
                 "lightness": 17
-              },
-              {
+            },
+            {
                 "weight": 1.2
-              }]
-            }],
+            }
+        ]
+    }
+],
             center: new google.maps.LatLng(50.512842, 30.499916),
             mapTypeId: 'roadmap'
           });
@@ -422,10 +364,6 @@
             cart:
             {
               icon: iconBase + 'magazine.png'
-            },
-            carGrey:
-            {
-              icon: iconBase + 'avtokino.png'
             },
             clinic:
             {
@@ -490,10 +428,6 @@
             type: 'cart'
           },
           {
-            position: new google.maps.LatLng(50.512784, 30.502000),
-            type: 'carGrey'
-          },
-          {
             position: new google.maps.LatLng(50.512648, 30.501196),
             type: 'apteka'
           },
@@ -548,7 +482,7 @@
             });
           });
         }
-
+  
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZMtRIe3Lor3hom1nW5H0ZdD-fel0LjYs&callback=initMap">
       </script>
@@ -617,6 +551,185 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <div class="features__gallery" style="background-image:url('../../img/features/Layer_12.jpg')">
+          <h3>ВЕБ-Камера</h3>
+          <p>Ход строительства в реальном времени</p>
+        </div>
+        <div class="features__web" style="background-image:url('../../img/features/Layer_11.jpg')">
+          <h3>Галерея</h3>
+          <p>Фотографии интерьера и экстерьера</p>
+        </div>
+      </div>
+      <div class="investors" style="background-image:url('../../img/investors-bg.png')">
+        <div class="container">
+          <div class="investors__inner">
+            <div class="investors__logo">
+              <img src="../../img/investors-logo.png" alt="Obolon-Residence">
+            </div>
+            <div class="investors__description">
+              <p>Obolon Residences – это еще один объект жилой недвижимости исключительного качества в портфеле Dragon-Ukrainian Properties & Development plc (DUPD), международного девелопера, акции которого котируются на Лондонской фондовой бирже. <span>Продажу квартир осуществляет ЗНВПИФ "Девелопмент" ООО "Драгон Эссет Менеджмент".</span>
+              </p>
+              <p>DUPD создан инвестиционной компанией целью инвестирования в украинский рынок жилой и коммерческой недвижимости. DUPD уже инвестировал более $250 млн. в ряд проектов в Украине, среди которых коттеджный городок Green Hills, эксклюзивный клубный поселок Riviera Villas, сеть гипермаркетов «Новая линия» и компания Arricano, инвестирующая в объекты торговой недвижимости (торгово-развлекательные центры Skymall, «Район», «Проспект» (Киев), Sun Gallery (Кривой Рог), City Mall (Запорожье), Inter Mall (Симферополь) и другие). </p>
+              <p>Dragon Capital – крупнейшая инвестиционная компания Украины, предоставляющая полный спектр инвестиционно-банковских и брокерских услуг для институциональных, корпоративных и частных клиентов. Основана в 2000 в Киеве. Контроль над Dragon Capital принадлежит ее менеджменту, миноритарным пакетом компании владеет Goldman Sachs, одна из крупнейших мировых инвестиционных компаний. Под управлением Dragon Capital находится инвестиционный портфель стоимостью около $0,5 млрд.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__left">
+              <div class="facebook">
+                <div class="fb-page" data-href="https://www.facebook.com/pg/ObolonResidences/about/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                  <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/pg/ObolonResidences/about/"><a href="https://www.facebook.com/pg/ObolonResidences/about/">Obolon</a></blockquote>
+                  </div>
+                </div>
+                <div id="fb-root"></div>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="sales">
+                <h3>ОФИС ПРОДАЖ</h3>
+                <div class="sales__inner">
+                  <div class="sales__item">
+                    <p class="text text_gold">Ждем Вас по адресу</p>
+                    <span>пр. Оболонский, 26</span>
+                    <span>Киев, 04205, Украина</span>
+                  </div>
+                  <div class="sales__item">
+                    <p class="text text_gold">Режим работы офиса продаж:</p>
+                    <span>Пн.–Пт. 9:00 – 19:00</span>
+                    <span>Сб., Вс. 10:00 – 16:00 </span>
+                  </div>
+                  <div class="sales__item">
+                    <a href="tel:++38 (044) 498 26 26">+38 (044) 498 26 26</a>
+                    <a href="mailto:info@o-r.com.ua" class="link link_gold">info@o-r.com.ua</a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__quest-form">
+                <form class="form" action="#">
+                  <p>Задать вопрос</p>
+                  <div class="form__field"><input type="text" placeholder="Введите имя"></div>
+                  <div class="form__field"><input type="text" placeholder="Введите e-mail/телефон"></div>
+                  <div class="form__field"><textarea name="comment" placeholder="Введите комментарий"></textarea></div>
+                  <button type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="popup js-popup" data-popup="servise">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/blabla/servise.png" alt="Консьерж-сервис" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="sport">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/blabla/sport.png" alt="Спортзал" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="conf-room">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/blabla/conf-room.png" alt="Конференц-комната" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="lounge">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/blabla/lounge.png" alt="Лаунж зона
+на крыше" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="child-room">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/blabla/child-room.png" alt="Детская комната" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="wash">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/blabla/washroom.png" alt="Прачечная" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="design">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/blabla/design.png" alt="Студия дизайна" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="booking">
+        <div class="popup__inner">
+          <div class="booking-form">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <form class="form" action="#">
+              <p>Записаться на просмотр</p>
+              <div class="form__field"><input type="text" placeholder="Введите имя"></div>
+              <div class="form__field"><input type="text" placeholder="Введите e-mail/телефон"></div>
+              <div class="form__field"><textarea name="comment" placeholder="Введите комментарий"></textarea></div>
+              <button type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </div>

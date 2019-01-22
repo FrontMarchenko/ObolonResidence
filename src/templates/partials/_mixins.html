@@ -1,14 +1,29 @@
 {% macro icon(i) %}
-<svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+<svg class="icon icon-{{i}}">
+  <use xlink:href="img/sprite.svg#icon-{{i}}"></use>
+</svg>
 {% endmacro %}
 
-{% macro advitems(title, img) %}
-<div class="advantages__item">
-        <div class="advantages-item" style="background-image: url('img/blabla/{{img}}')">
-            <a href="#" class="btn">Подробнее</a>
-        </div>
-        <p>{{title}}</p>
-        
+{% macro advitems(title, img, data) %}
+<div class="advantages__item js-popup-open" data-popup-target="{{data}}">
+  <div class="advantages-item" style="background-image: url('img/blabla/{{img}}')">
+    <a href="#" class="btn">Подробнее</a>
+  </div>
+  <p>{{title}}</p>
+
+</div>
+
+{% endmacro %}
+{% macro advpopitems(title, img, data) %}
+<div class="popup__item">
+  <div class="popup__close js-popup-close">
+    <span>Close</span>
+  </div>
+  <div class="popup__content">
+    <img src="../../img/blabla/{{img}}" alt="{{title}}" />
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+
 </div>
 
 {% endmacro %}

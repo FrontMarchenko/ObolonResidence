@@ -2,34 +2,41 @@
         adv =[
     {
     title: 'Консьерж-сервис',
-    img: 'servise.png'
+    img: 'servise.png',
+    data: 'servise'
     },
     {
     title: 'Спортзал',
-    img: 'sport.png'
+    img: 'sport.png',
+    data: 'sport'
     },
     {
     title: 'Конференц-комната',
-    img: 'conf-room.png'
+    img: 'conf-room.png',
+    data: 'conf-room'
 
     },
     {
     title: 'Лаунж зона
     на крыше',
-    img: 'lounge.png'
+    img: 'lounge.png',
+    data: 'lounge'
     },
     {
     title: 'Детская комната',
-    img: 'child-room.png'
+    img: 'child-room.png',
+    data: 'child-room'
     },
     {
     title: 'Прачечная',
-    img: 'washroom.png'
+    img: 'washroom.png',
+    data: 'wash'
 
     },
     {
     title: 'Студия дизайна',
-    img: 'design.png'
+    img: 'design.png',
+    data: 'design'
 
     }
 ] %}
@@ -65,7 +72,8 @@
             {% for i in adv %}
             {{ mixins.advitems(
               img = i.img,
-              title = i.title
+              title = i.title,
+              data = i.data
             )}}
             {% endfor %}
        </div>

@@ -1,0 +1,78 @@
+{%set
+advpopup =[
+{
+title: 'Консьерж-сервис',
+img: 'servise.png',
+data: 'servise'
+},
+{
+title: 'Спортзал',
+img: 'sport.png',
+data: 'sport'
+},
+{
+title: 'Конференц-комната',
+img: 'conf-room.png',
+data: 'conf-room'
+
+},
+{
+title: 'Лаунж зона
+на крыше',
+img: 'lounge.png',
+data: 'lounge'
+},
+{
+title: 'Детская комната',
+img: 'child-room.png',
+data: 'child-room'
+},
+{
+title: 'Прачечная',
+img: 'washroom.png',
+data: 'wash'
+
+},
+{
+title: 'Студия дизайна',
+img: 'design.png',
+data: 'design'
+
+}
+] %}
+{% for k in advpopup %}
+<div class="popup js-popup" data-popup="{{k.data}}">
+
+  <div class="popup__inner">
+
+    {{ mixins.advpopitems(
+    img = k.img,
+    title = k.title,
+    data = k.data
+    )}}
+
+  </div>
+
+</div>
+{% endfor %}
+
+
+<div class="popup js-popup" data-popup="booking">
+  <div class="popup__inner">
+    <div class="booking-form">
+      <div class="popup__close js-popup-close">
+        <span>Close</span>
+      </div>
+      <form class="form" action="#">
+        <p>Записаться на просмотр</p>
+        <div class="form__field"><input type="text" placeholder="Введите имя"/></div>
+        <div class="form__field"><input type="text" placeholder="Введите e-mail/телефон"/></div>
+        <div class="form__field"><textarea name="comment" placeholder="Введите комментарий"></textarea></div>
+
+        <button type="submit">Отправить</button>
+
+      </form>
+    </div>
+
+  </div>
+</div>
