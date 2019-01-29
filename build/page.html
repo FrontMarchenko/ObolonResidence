@@ -39,13 +39,12 @@
                   <a href="tel:+38(044)498-26-26">+38 (044) 498-26-26</a>
                 </div>
                 <div class="contacts__booking js-contacts-booking js-popup-open" data-popup-target="booking">
-                  <a href="#">Записаться на просмотр</a>
+                  <a href="#" data-translate="_m_contacts">Записаться на просмотр</a>
                 </div>
               </div>
               <div class="switch-language">
-                <div class="switch-language__ru">рус</div>
-                <div class="switch-language__ua">укр</div>
-                <div class="switch-language__en">eng</div>
+                <a href="#" class="switch-language__en js-toggle-lang" data-lang="en">en</a>
+                <a href="#" class="switch-language__ru is-hide js-toggle-lang" data-lang="ru">ru</a>
               </div>
             </div>
           </div>
@@ -70,7 +69,7 @@
         <div class="hero__bottom">
           <div class="container">
             <div class="hero__logo">
-              <img src="../../img/awards.jpg" alt="European Property Awards">
+              <img src="../../img/awards.jpg" alt="European Property Awards" />
             </div>
             <div class="hero__description">
               <p>Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская». Западный дизайн, роскошные интерьеры лобби и этажей, отделка мрамором, </p>
@@ -493,19 +492,19 @@
             <div class="apartament">
               <div class="apartament__sections">
                 <p>1. Выберете секцию</p>
-                <a href="#" class="is-active" data-section="1">Секция 1</a>
-                <a href="#" data-section="2">Секция 2</a>
+                <a href="#" class="sections-link js-section-link is-active" data-tab="1">Секция 1</a>
+                <a href="#" class="sections-link js-section-link " data-tab="2">Секция 2</a>
               </div>
               <div class="apartament__rooms">
                 <p>2.Выберете кол-во комнат</p>
-                <a href="#" class="is-active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">Пентхаус</a>
+                <a href="#" class="rooms-link is-active js-rooms-link" data-room="1">1</a>
+                <a href="#" class="rooms-link js-rooms-link" data-room="2">2</a>
+                <a href="#" class="rooms-link js-rooms-link" data-room="3">3</a>
+                <a href="#" class="rooms-link js-rooms-link" data-room="4">4</a>
+                <a href="#" class="rooms-link js-rooms-link" data-room="5">Пентхаус</a>
               </div>
             </div>
-            <div class="apartament-content">
+            <div class="apartament-content is-active" data-section="1" data-room-content="1" data-popup-target="1-1">
               <div class="apartament-content__inner">
                 <div class="apartament-info">
                   <div class="apartament-info__item">
@@ -517,7 +516,421 @@
                     <a href="" class="link link_gold">Тип П1</a>
                   </div>
                   <div class="apartament-info__item">
-                    <p>section1 room1</p>
+                    <p>Section1 room1</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="1" data-room-content="2" data-popup-target="1-2">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 1</p>
+                    <p class="text text_gold">2-комнатная</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section1 room2</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="1" data-room-content="3" data-popup-target="1-3">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 1</p>
+                    <p class="text text_gold">3-комнатная</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section1 room3</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="1" data-room-content="4" data-popup-target="1-4">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 1</p>
+                    <p class="text text_gold">4-комнатная</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section1 room4</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="1" data-room-content="5" data-popup-target="1-5">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 1</p>
+                    <p class="text text_gold">Пентхаус</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section1 Пентхаус</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="2" data-room-content="1" data-popup-target="2-1">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 2</p>
+                    <p class="text text_gold">1-комнатная</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section2 room1</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="2" data-room-content="2" data-popup-target="2-2">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 2</p>
+                    <p class="text text_gold">2-комнатная</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section2 room2</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="2" data-room-content="3" data-popup-target="2-3">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 2</p>
+                    <p class="text text_gold">3-комнатная</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section2 room3</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="2" data-room-content="4" data-popup-target="2-4">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 2</p>
+                    <p class="text text_gold">4-комнатная</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section2 room4</p>
+                  </div>
+                </div>
+                <div class="apartament-img">
+                  <img src="../../img/apartaments/section1room1.png" alt="" />
+                </div>
+                <div class="apartament-descr">
+                  <div class="apartament-descr__item">
+                    <p><span>01. Холл</span><span>9,33 кв.м</span> </p>
+                    <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p>
+                    <p><span>03. Спальня</span><span>15,54 кв.м</span> </p>
+                    <p><span>04. Спальня</span><span>16,06 кв.м</span> </p>
+                    <p><span>05. Ванная</span><span>3,77 кв.м</span> </p>
+                    <p><span>06. Спальня</span><span>19,37 кв.м</span> </p>
+                    <p><span>07. Спальня</span><span>26,18 кв.м</span> </p>
+                    <p><span>08. Ванная</span><span>5,44 кв.м</span> </p>
+                    <p><span>09. Санузел</span><span>2,62 кв.м</span> </p>
+                    <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p>
+                    <p><span>11. Коридор</span><span>5,38 кв.м</span> </p>
+                    <p><span>12. Балкон</span><span>0,76 кв.м</span> </p>
+                    <p><span>13. Балкон</span><span>0,79 кв.м</span> </p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
+                  </div>
+                  <div class="apartament-descr__item">
+                    <a href="#" class="link link_black">Получить брошюру</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="apartament-content " data-section="2" data-room-content="5" data-popup-target="2-5">
+              <div class="apartament-content__inner">
+                <div class="apartament-info">
+                  <div class="apartament-info__item">
+                    <p class="text text_gold">Секция 2</p>
+                    <p class="text text_gold">Пентхаус</p>
+                  </div>
+                  <div class="apartament-info__item">
+                    <a href="" class="link link_gold">Тип1</a>
+                    <a href="" class="link link_gold">Тип П1</a>
+                  </div>
+                  <div class="apartament-info__item">
+                    <p>Section2 Пентхаус</p>
                   </div>
                 </div>
                 <div class="apartament-img">
@@ -559,7 +972,7 @@
           <h3>ВЕБ-Камера</h3>
           <p>Ход строительства в реальном времени</p>
         </div>
-        <div class="features__web" style="background-image:url('../../img/features/Layer_11.jpg')">
+        <div class="features__web js-features-web" data-popup-target="gallery-slider" style="background-image:url('../../img/features/Layer_11.jpg')">
           <h3>Галерея</h3>
           <p>Фотографии интерьера и экстерьера</p>
         </div>
@@ -568,7 +981,7 @@
         <div class="container">
           <div class="investors__inner">
             <div class="investors__logo">
-              <img src="../../img/investors-logo.png" alt="Obolon-Residence">
+              <img src="../../img/investors-logo.png" alt="Obolon-Residence" />
             </div>
             <div class="investors__description">
               <p>Obolon Residences – это еще один объект жилой недвижимости исключительного качества в портфеле Dragon-Ukrainian Properties & Development plc (DUPD), международного девелопера, акции которого котируются на Лондонской фондовой бирже. <span>Продажу квартир осуществляет ЗНВПИФ "Девелопмент" ООО "Драгон Эссет Менеджмент".</span>
@@ -615,8 +1028,8 @@
               <div class="footer__quest-form">
                 <form class="form" action="#">
                   <p>Задать вопрос</p>
-                  <div class="form__field"><input type="text" placeholder="Введите имя"></div>
-                  <div class="form__field"><input type="text" placeholder="Введите e-mail/телефон"></div>
+                  <div class="form__field"><input type="text" placeholder="Введите имя" /></div>
+                  <div class="form__field"><input type="text" placeholder="Введите e-mail/телефон" /></div>
                   <div class="form__field"><textarea name="comment" placeholder="Введите комментарий"></textarea></div>
                   <button type="submit">Отправить</button>
                 </form>
@@ -717,6 +1130,137 @@
           </div>
         </div>
       </div>
+      <div class="popup js-popup" data-popup="1-1">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Консьерж-сервис" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="1-2">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Спортзал" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="1-3">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Конференц-комната" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="1-4">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Лаунж зона
+на крыше" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="1-5">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Детская комната" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="2-1">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Прачечная" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="2-2">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Студия дизайна" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="2-3">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Студия дизайна" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="2-4">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Студия дизайна" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="2-5">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <img src="../../img/apartaments/section1room1.png" alt="Студия дизайна" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="popup js-popup" data-popup="booking">
         <div class="popup__inner">
           <div class="booking-form">
@@ -725,11 +1269,34 @@
             </div>
             <form class="form" action="#">
               <p>Записаться на просмотр</p>
-              <div class="form__field"><input type="text" placeholder="Введите имя"></div>
-              <div class="form__field"><input type="text" placeholder="Введите e-mail/телефон"></div>
+              <div class="form__field"><input type="text" placeholder="Введите имя" /></div>
+              <div class="form__field"><input type="text" placeholder="Введите e-mail/телефон" /></div>
               <div class="form__field"><textarea name="comment" placeholder="Введите комментарий"></textarea></div>
               <button type="submit">Отправить</button>
             </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup js-popup" data-popup="gallery-slider">
+        <div class="popup__inner">
+          <div class="popup__item">
+            <div class="popup__close js-popup-close">
+              <span>Close</span>
+            </div>
+            <div class="popup__content">
+              <div class="gallery-slider js-gallery-slider">
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+                <img src="../../img/apartaments/section1room1.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

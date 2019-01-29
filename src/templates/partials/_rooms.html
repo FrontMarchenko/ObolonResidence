@@ -1,73 +1,144 @@
+{%set roomContent =[
+{
+    class: 'is-active',
+    dataPopup: '1-1',
+    sectionNumber: '1',
+    roomNumber: '1',
+    room: '1-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section1 room1',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '1',
+    dataPopup: '1-2',
+    roomNumber: '2',
+    room: '2-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section1 room2',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '1',
+    dataPopup: '1-3',
+    roomNumber: '3',
+    room: '3-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section1 room3',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '1',
+    dataPopup: '1-4',
+    roomNumber: '4',
+    room: '4-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section1 room4',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '1',
+    dataPopup: '1-5',
+    roomNumber: '5',
+    room: 'Пентхаус',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section1 Пентхаус',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '2',
+    dataPopup: '2-1',
+    roomNumber: '1',
+    room: '1-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section2 room1',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '2',
+    dataPopup: '2-2',
+    roomNumber: '2',
+    room: '2-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section2 room2',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '2',
+    dataPopup: '2-3',
+    roomNumber: '3',
+    room: '3-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section2 room3',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '2',
+    dataPopup: '2-4',
+    roomNumber: '4',
+    room: '4-комнатная',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section2 room4',
+    img: '../../img/apartaments/section1room1.png'
+    },
+    {
+    sectionNumber: '2',
+    dataPopup: '2-5',
+    roomNumber: '5',
+    room: 'Пентхаус',
+    type: 'Тип1',
+    typeP: 'Тип П1',
+    roomDescription: 'Section2 Пентхаус',
+    img: '../../img/apartaments/section1room1.png'
+    }
+
+] %}
+
+
+
 <div class="apartaments">
-    <div class="container">
-        <div class="apartaments__inner">
-            <div class="apartament">
-                <div class="apartament__sections">
-                    <p>1. Выберете секцию</p>
-                    <a href="#" class="is-active" data-section="1">Секция 1</a>
-                    <a href="#" data-section="2">Секция 2</a>
-                </div>
-                <div class="apartament__rooms">
-                    <p>2.Выберете кол-во комнат</p>
-                    <a href="#" class="is-active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">Пентхаус</a>
-                </div>
-            </div>
-            <div class="apartament-content">
-                <div class="apartament-content__inner">
-                    <div class="apartament-info">
-                        <div class="apartament-info__item">
-                                <p class="text text_gold">Секция 1</p>
-                                <p class="text text_gold">1-комнатная</p>
-                        </div>
-                            
-                        <div class="apartament-info__item">
-                                <a href="" class="link link_gold">Тип1</a>
-                                <a href="" class="link link_gold">Тип П1</a>
-                        </div>
-                            
-                        <div class="apartament-info__item">
-                                <p>section1 room1</p>
-                        </div>
-                          
-                    </div>
-                    <div class="apartament-img">
-                        <img src="../../img/apartaments/section1room1.png" alt=""/>
-                        
-                    </div>
-                    <div class="apartament-descr">
-                        <div class="apartament-descr__item">
-                                <p><span>01. Холл</span><span>9,33 кв.м</span> </p> 
-                                <p><span>02. Кухня / Гостиная</span> <span>42,33 кв.м</span> </p> 
-                                <p><span>03. Спальня</span><span>15,54 кв.м</span> </p> 
-                                <p><span>04. Спальня</span><span>16,06 кв.м</span> </p> 
-                                <p><span>05. Ванная</span><span>3,77 кв.м</span> </p> 
-                                <p><span>06. Спальня</span><span>19,37 кв.м</span> </p> 
-                                <p><span>07. Спальня</span><span>26,18 кв.м</span> </p> 
-                                <p><span>08. Ванная</span><span>5,44 кв.м</span> </p> 
-                                <p><span>09. Санузел</span><span>2,62 кв.м</span> </p> 
-                                <p><span>10. Кладовая</span><span>4,41 кв.м</span> </p> 
-                                <p><span>11. Коридор</span><span>5,38 кв.м</span> </p> 
-                                <p><span>12. Балкон</span><span>0,76 кв.м</span> </p> 
-                                <p><span>13. Балкон</span><span>0,79 кв.м</span> </p> 
-         
-                        </div>
-                       <div class="apartament-descr__item">
-                        <p class="text text_gold"><span>Общая площадь</span> <span>151,98 кв.м</span></p>
-                       </div>
-                         <div class="apartament-descr__item">
-                           <a href="#" class="link link_red">Подробнее (скачать PDF)</a>
-                       </div>
-                       <div class="apartament-descr__item">
-                           <a href="#" class="link link_black">Получить брошюру</a>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
+  <div class="container">
+    <div class="apartaments__inner">
+      <div class="apartament">
+        <div class="apartament__sections">
+          <p>1. Выберете секцию</p>
+          <a href="#" class="sections-link js-section-link is-active" data-tab="1">Секция 1</a>
+          <a href="#" class="sections-link js-section-link " data-tab="2">Секция 2</a>
         </div>
+        <div class="apartament__rooms">
+          <p>2.Выберете кол-во комнат</p>
+          <a href="#" class="rooms-link is-active js-rooms-link" data-room="1">1</a>
+          <a href="#" class="rooms-link js-rooms-link" data-room="2">2</a>
+          <a href="#" class="rooms-link js-rooms-link" data-room="3">3</a>
+          <a href="#" class="rooms-link js-rooms-link" data-room="4">4</a>
+          <a href="#" class="rooms-link js-rooms-link" data-room="5">Пентхаус</a>
+        </div>
+      </div>
+      {% for k in roomContent %}
+      {{ mixins.tabscontent(
+        class = k.class,
+        dataPopup = k.dataPopup,
+        sectionNumber = k.sectionNumber,
+        roomNumber = k.roomNumber,
+        room = k.room,
+        type = k.type,
+        typeP = k.typeP,
+        roomDescription = k.roomDescription,
+        img = k.img
+        
+        )}}
+      
+      {% endfor %}
+     
     </div>
+  </div>
 </div>
